@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>实验八：flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/phaser.2.4.2.min.js') }}"></script>
+</head>
+<body>
+<button id="toggleScoresBtn">显示/隐藏得分</button>
+<div id="scores"></div>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script>
+    var paddleUrl = "{{ url_for('static', filename='img/paddle.png') }}";
+    var brickUrl = "{{ url_for('static', filename='img/brick.png') }}";
+    var ballUrl = "{{ url_for('static', filename='img/wobble.png') }}";
+    var buttonUrl = "{{ url_for('static', filename='img/button.png') }}";
+</script>
+</body>
+</html>
